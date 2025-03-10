@@ -213,7 +213,7 @@ public class SerializationExample {
 </details>
 
 <details>
-  <summary><h3>6. 문자열 클래스와 StringBuffer, StringBuilder 특징</h3></summary>
+  <summary><h3>6. String 클래스와 StringBuffer, StringBuilder 특징</h3></summary>
 
 ## 📌 **String 클래스**
 - **불변(Immutable) 클래스**입니다.
@@ -568,7 +568,7 @@ Garbage Collection은 자바 애플리케이션에서 메모리 관리를 자동
 
 
 <details>
-  <summary><h3>11. 정적 클래스와 정적 변수, 파이널에 대해 설명하세요.</h3></summary> 
+  <summary><h3>11. 정적 클래스(static class)와 정적 변수, 파이널(final)에 대해 설명하세요.</h3></summary> 
 
 ### 1. **정적 클래스 (Static Class)**
 
@@ -618,7 +618,7 @@ Garbage Collection은 자바 애플리케이션에서 메모리 관리를 자동
 </details>
 
 <details>
-  <summary><h3>12. 컬렉션 클래스와 스트림에 대해 설명하세요.</h3></summary> 
+  <summary><h3>12. Collection Class와 Stream에 대해 설명하세요.</h3></summary> 
 
 ### 1. **컬렉션 클래스 (Collection Classes)**
 
@@ -708,7 +708,7 @@ public int hashCode() {
 
 
 <details>
-  <summary><h3>14. 객체지향이란?</h3></summary>
+  <summary><h3>14. 객체지향(OOP)이란?</h3></summary>
 
 **객체지향(Object-Oriented Programming, OOP)**은 소프트웨어를 객체(Object)들의 상호작용으로 구성하는 프로그래밍 패러다임입니다. 객체는 데이터와 이를 처리하는 메서드를 하나의 단위로 묶은 개념입니다.
 
@@ -764,7 +764,7 @@ public int hashCode() {
 
 
 <details>
-  <summary><h3>16. 제네릭 (Generics)</h3></summary>
+  <summary><h3>16. 제네릭 (Generics)에 대해 설명하세요.</h3></summary>
 
 - **제네릭**은 클래스, 인터페이스, 메서드에서 타입을 **매개변수화**하여, 코드 재사용성과 타입 안전성을 높이는 기능입니다. 
 - 타입을 **런타임이 아닌 컴파일 타임에** 결정할 수 있어, 형변환을 방지하고, 코드의 안전성을 높입니다.
