@@ -706,10 +706,9 @@ public int hashCode() {
 
 </details>
 
-### 객체지향 (OOP) 관련
 
 <details>
-  <summary><h3>1. 객체지향이란?</h3></summary>
+  <summary><h3>14. 객체지향이란?</h3></summary>
 
 **객체지향(Object-Oriented Programming, OOP)**은 소프트웨어를 객체(Object)들의 상호작용으로 구성하는 프로그래밍 패러다임입니다. 객체는 데이터와 이를 처리하는 메서드를 하나의 단위로 묶은 개념입니다.
 
@@ -729,7 +728,7 @@ public int hashCode() {
 </details>
 
 <details>
-  <summary><h3>2. SOLID 원칙이란?</h3></summary>
+  <summary><h3>15. SOLID 원칙이란?</h3></summary>
 
 **SOLID**는 객체지향 설계를 위한 5가지 기본 원칙의 약자입니다. 이 원칙들을 따르면 더 유연하고, 확장 가능하며, 유지보수가 용이한 코드를 작성할 수 있습니다.
 
@@ -761,4 +760,48 @@ public int hashCode() {
 #### SOLID 원칙을 지키면?
 - 코드의 재사용성과 확장성을 높이며, 유지보수가 용이해집니다.
 - 테스트가 용이하고, 코드의 결합도를 낮출 수 있습니다.
+</details>
+
+
+<details>
+  <summary><h3>16. 제네릭 (Generics)</h3></summary>
+
+- **제네릭**은 클래스, 인터페이스, 메서드에서 타입을 **매개변수화**하여, 코드 재사용성과 타입 안전성을 높이는 기능입니다. 
+- 타입을 **런타임이 아닌 컴파일 타임에** 결정할 수 있어, 형변환을 방지하고, 코드의 안전성을 높입니다.
+
+#### 주요 특징
+1. **타입 매개변수화**: `<>`를 사용하여 클래스나 메서드에서 타입을 변수처럼 다룰 수 있습니다.
+2. **타입 안전성**: 컴파일 시 타입 체크가 이루어져, 런타임에서 발생할 수 있는 `ClassCastException`을 방지할 수 있습니다.
+3. **유연성**: 같은 로직을 다양한 타입에 대해 사용할 수 있습니다.
+
+#### 예시
+
+```java
+// 제네릭을 사용하는 클래스
+public class Box<T> {
+    private T value;
+
+    public T getValue() {
+        return value;
+    }
+
+    public void setValue(T value) {
+        this.value = value;
+    }
+}
+
+// 사용 예
+Box<Integer> intBox = new Box<>();
+intBox.setValue(10);
+System.out.println(intBox.getValue());  // 10
+
+Box<String> strBox = new Box<>();
+strBox.setValue("Hello");
+System.out.println(strBox.getValue());  // Hello
+```
+
+#### 제네릭의 장점
+1. **형변환을 줄여줌**: 코드에서 객체의 타입을 명시적으로 지정하여 안전하게 사용할 수 있습니다.
+2. **코드 재사용**: 동일한 로직을 다양한 타입에 대해 사용할 수 있습니다.
+
 </details>
