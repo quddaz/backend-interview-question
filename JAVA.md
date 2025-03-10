@@ -132,7 +132,7 @@ System.out.println(c == d);  // true (값 비교)
 </details>
 
 <details>
-  <summary><h3>4. 직렬화는 무엇이고 java에서는 왜 사용하나요?</h3></summary>
+  <summary><h3>5. 직렬화는 무엇이고 java에서는 왜 사용하나요?</h3></summary>
 
 ## ✅ 직렬화(Serialization)란?
 - **직렬화**는 객체를 **바이트 스트림**으로 변환하여 **파일**이나 **네트워크**를 통해 전달할 수 있게 만드는 과정입니다.
@@ -213,7 +213,7 @@ public class SerializationExample {
 </details>
 
 <details>
-  <summary><h3>5. 문자열 클래스와 StringBuffer, StringBuilder 특징</h3></summary>
+  <summary><h3>6. 문자열 클래스와 StringBuffer, StringBuilder 특징</h3></summary>
 
 ## 📌 **String 클래스**
 - **불변(Immutable) 클래스**입니다.
@@ -248,6 +248,6 @@ public class SerializationExample {
 </details>
 
 <details>
-  <summary><h3>4. Wrapper Class가 무엇인가요?</h3></summary>
+  <summary><h3>7. Wrapper Class가 무엇인가요?</h3></summary>
 자바에는 기본 타입과 추가로 Wrapper 
 </details>
