@@ -11,7 +11,7 @@ JVM(Java Virtual Machine)은 자바 애플리케이션을 실행하는 가상 �
   - 스택(Stack): 메서드 실행 시 생성되는 프레임이 저장되며, 지역 변수와 메서드 호출 정보가 포함됨.
 - 메서드 영역(Method Area): 클래스 정보, 메서드 코드, 상수 풀(Constant Pool) 등이 저장됨.
 - 실행 엔진(Execution Engine): 바이트코드를 해석하고 실행하며, JIT(Just-In-Time) 컴파일러를 활용하여 성능 최적화를 수행합니다.
-
+</details>
 <details>
   <summary><h3>2. Call by value와 Call by Reference에 대해 설명해주세요.</h3></summary>
   
