@@ -243,10 +243,13 @@ public class SerializationExample {
 - 멀티스레드가 아닌 환경에서 성능이 더 우수합니다.
 
 ## 🎯 **결론**
-- String은 불변 객체로, 문자열이 자주 변경되면 성능에 영향을 미칠 수 있습니다.
-- StringBuffer는 멀티스레드 환경에서 안전하지만, 성능은 StringBuilder보다 떨어집니다.
-- StringBuilder는 멀티스레드 환경을 고려하지 않는 비멀티스레드 환경에서 가장 성능이 뛰어납니다.
-  
+String 클래스는 불변(Immutable) 객체입니다. 즉, 문자열이 한 번 생성되면 변경할 수 없으며, 변경 시 새로운 String 객체가 생성됩니다.
+이는 보안성을 높이고, 해시값을 캐싱하여 성능을 최적화하는 등의 장점이 있습니다. 하지만 문자열을 자주 변경하면 메모리 낭비가 발생할 수 있습니다.
+
+이를 해결하기 위해 **가변(Mutable) 문자열 객체인 StringBuffer와 StringBuilder**가 제공됩니다.
+
+- StringBuffer: 멀티스레드 환경에서 안전(Thread-Safe)하며, synchronized 키워드로 동기화가 적용되어 있습니다.
+- StringBuilder: 싱글스레드 환경에서 빠른 성능을 제공합니다. 동기화가 없으므로 멀티스레드 환경에서는 안전하지 않습니다.
 </details>
 
 <details>
