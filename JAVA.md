@@ -2,22 +2,15 @@
 
 <details>
   <summary><h3>1. JVM의 구조와 Java의 실행방식이 뭔가요?</h3></summary>
-JVM (Java Virtual Machine) 은 자바 애플리케이션을 실행하는 가상 머신으로, 클래스 로딩, 실행, 메모리 관리 등을 담당합니다.
 
-> ✔ JVM의 구조
+JVM(Java Virtual Machine)은 자바 애플리케이션을 실행하는 가상 머신으로, 플랫폼 독립적인 실행 환경을 제공합니다. 주요 구성 요소는 다음과 같습니다.
 
-<li>클래스 로더: 바이트코드를 JVM으로 로드
-<li>실행 엔진: 바이트코드 실행 (인터프리터 & JIT 컴파일러)
-<li>메모리 영역: 스택(지역 변수), 힙(객체 저장), 메소드 영역(클래스 정보)
-
-> ✔ Java 실행 방식
-
-<li>자바 코드를 컴파일러가 바이트코드로 변환
-<li>클래스 로더가 JVM에 로드
-<li>실행 엔진이 바이트코드를 해석 & 실행
-  
-즉, "컴파일 → 로드 → 실행"의 과정으로 동작합니다.
-</details>
+- 클래스 로더(Class Loader): .class 파일을 로드하고, 링크 및 초기화를 수행합니다.
+- 런타임 데이터 영역(Runtime Data Area): 프로그램 실행에 필요한 데이터를 저장하는 영역으로,
+  - 힙(Heap): new 키워드로 생성된 객체 및 인스턴스 변수가 저장되는 영역 (GC가 관리).
+  - 스택(Stack): 메서드 실행 시 생성되는 프레임이 저장되며, 지역 변수와 메서드 호출 정보가 포함됨.
+- 메서드 영역(Method Area): 클래스 정보, 메서드 코드, 상수 풀(Constant Pool) 등이 저장됨.
+- 실행 엔진(Execution Engine): 바이트코드를 해석하고 실행하며, JIT(Just-In-Time) 컴파일러를 활용하여 성능 최적화를 수행합니다.
 
 <details>
   <summary><h3>2. Call by value와 Call by Reference에 대해 설명해주세요.</h3></summary>
