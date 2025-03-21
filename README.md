@@ -1,6 +1,3 @@
 # 면접 예상 질문 정리하기 
 
-[JAVA](https://github.com/quddaz/backend-interview-question/blob/main/JAVA.md)
----
-[Spring](https://github.com/quddaz/backend-interview-question/blob/main/Spring.md)
----
+https://cheddar-wednesday-2ac.notion.site/1b9809b71d2280aa88b5cd2a56ee7cda?pvs=4
